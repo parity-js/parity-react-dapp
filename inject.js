@@ -1,6 +1,7 @@
 const injectBabel = require('./src/inject-babel');
 const injectCSSRules = require('./src/inject-css-rules');
 const injectEJSLoader = require('./src/inject-ejs-loader');
+const injectEslintConfig = require('./src/inject-eslint-config');
 const injectHotLoader = require('./src/inject-hot-loader');
 const injectIndex = require('./src/inject-index');
 const injectHTMLPlugin = require('./src/inject-html-plugin');
@@ -29,6 +30,9 @@ module.exports = function inject (config) {
 
   // Inject misc. Webpack plugins
   config = injectPlugins(config);
+
+  // Inject Eslint custom config
+  config = injectEslintConfig(config);
 
   // Inject custom CSS rules
   config = injectCSSRules(config);
