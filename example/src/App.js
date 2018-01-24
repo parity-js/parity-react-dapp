@@ -9,11 +9,11 @@ import styles from './App.css';
 export default class App extends Component {
   render () {
     return (
-      <Container className={styles.container}>
-          <div>
-            <Menu />
-            <Content />
-          </div>
+      <Container className={ styles.container }>
+        <div>
+          <Menu />
+          <Content />
+        </div>
       </Container>
     );
   }

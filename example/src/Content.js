@@ -22,7 +22,7 @@ export default class Content extends Component {
       }
 
       this.setState({ blockNumber: parseInt(val, 16) });
-    })
+    });
   }
 
   render () {

@@ -5,7 +5,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "react-app-rewired start"
+    "start": "parity-react-dapp start",
+    "build": "parity-react-dapp build",
+    "init": "parity-react-dapp init",
+    "lint": "parity-react-dapp lint",
+    "lint:css": "parity-react-dapp lint-css",
+    "lint:js": "parity-react-dapp lint-js",
+    "test": "parity-react-dapp test"
   },
   "dependencies": {
     "mobx": "^3.4.1",
@@ -16,6 +22,6 @@
     "semantic-ui-react": "^0.77.2"
   },
   "devDependencies": {
-    "parity-react-dapp": "link:../"
+    "parity-react-dapp": "file:../"
   }
 }

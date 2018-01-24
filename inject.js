@@ -8,46 +8,39 @@ const injectPlugins = require('./src/inject-plugins');
 
 const removeRequiredFiles = require('./src/remove-required-files');
 
-module.exports = {
-  webpack: (config) => {
-    // Prevent browser auto-open
-    process.env.BROWSER = 'none';
+module.exports = function inject (config) {
+  // Prevent browser auto-open
+  process.env.BROWSER = 'none';
 
-    // Remove index.html as required
-    removeRequiredFiles((file) => /index\.html$/.test(file));
+  // Set a different default port
+  process.env.PORT = process.env.PORT || 3001;
 
-    // Inject index JS page
-    config = injectIndex(config);
+  // Use relative public URLs
+  process.env.PUBLIC_URL = './';
 
-    // Inject React Hot Loader
-    config = injectHotLoader(config);
+  // Remove index.html as required
+  removeRequiredFiles((file) => /index\.html$/.test(file));
 
-    // Inject misc. Webpack plugins
-    config = injectPlugins(config);
+  // Inject index JS page
+  config = injectIndex(config);
 
-    // Inject custom CSS rules
-    config = injectCSSRules(config);
+  // Inject React Hot Loader
+  config = injectHotLoader(config);
 
-    // Add an EJS loader
-    config = injectEJSLoader(config);
+  // Inject misc. Webpack plugins
+  config = injectPlugins(config);
 
-    // Inject custom Babel rules
-    config = injectBabel(config);
+  // Inject custom CSS rules
+  config = injectCSSRules(config);
 
-    // Change the Webpack HTML Plugin
-    config = injectHTMLPlugin(config);
+  // Add an EJS loader
+  config = injectEJSLoader(config);
 
-    return config;
-  },
+  // Inject custom Babel rules
+  config = injectBabel(config);
 
-  devServer: (configFunction) => {
-    // Set a different default port
-    process.env.PORT = process.env.PORT || 3001;
+  // Change the Webpack HTML Plugin
+  config = injectHTMLPlugin(config);
 
-    return (proxy, allowedHost) => {
-      const config = configFunction(proxy, allowedHost);
-
-      return config;
-    };
-  }
+  return config;
 };

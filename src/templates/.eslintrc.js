@@ -1,1 +1,1 @@
-module.exports = require('parity-react-scripts/eslint.config');
+module.exports = require('parity-react-dapp/eslint.config');

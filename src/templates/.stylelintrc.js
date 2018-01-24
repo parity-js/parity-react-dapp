@@ -1,1 +1,1 @@
-module.exports = require('parity-react-scripts/stylelint.config');
+module.exports = require('parity-react-dapp/stylelint.config');
