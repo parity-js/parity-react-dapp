@@ -5,8 +5,12 @@
   "bin": {
     "parity-react-dapp": "./bin/index.js"
   },
-  "author": "Nicolas Gotchac <ngotchac@gmail.com>",
-  "license": "MIT",
+  "author": "Parity Team <admin@parity.io>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parity-JS/parity-react-dapp.git"
+  },
   "dependencies": {
     "babel-core": "6.26.0",
     "babel-eslint": "8.0.3",
