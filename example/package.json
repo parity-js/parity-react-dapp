@@ -1,0 +1,21 @@
+{
+  "name": "parity-react-dapp-example",
+  "version": "0.1.0",
+  "description": "A dapp example using parity-react-dapp",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-app-rewired start"
+  },
+  "dependencies": {
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.3.5",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.2"
+  },
+  "devDependencies": {
+    "parity-react-dapp": "link:../"
+  }
+}
