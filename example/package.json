@@ -11,7 +11,8 @@
     "lint": "parity-react-dapp lint",
     "lint:css": "parity-react-dapp lint-css",
     "lint:js": "parity-react-dapp lint-js",
-    "test": "parity-react-dapp test"
+    "test": "parity-react-dapp test",
+    "release": "parity-react-dapp release"
   },
   "dependencies": {
     "mobx": "^3.4.1",
