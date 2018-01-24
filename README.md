@@ -31,7 +31,7 @@ add will add the required scripts to your `package.json` file.
 
 ## Requirements
 
-You must have an `src/index.js` file that *exports your default component*, eg:
+You must have an `src/index.js` file that _**exports your default component**_, eg:
 
 ```js
 /* src/index.js */
