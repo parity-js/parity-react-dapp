@@ -1,5 +1,3 @@
-const path = require('path');
-
 const { createLoaderMatcher, findRule } = require('./utils');
 
 module.exports = function injectEslintConfig (config) {
@@ -10,9 +8,7 @@ module.exports = function injectEslintConfig (config) {
     return config;
   }
 
-  eslintRule.options.baseConfig = {
-    extends: [ path.resolve(__dirname, '../eslint.config') ]
-  };
+  eslintRule.options.baseConfig = require(__dirname, '../eslint.config');
 
   return config;
 };
