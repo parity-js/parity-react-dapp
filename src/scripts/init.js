@@ -20,7 +20,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
-const partition = require('lodash/partition');
+const partition = require('lodash.partition');
 
 const spinner = require('./spinner');
 
