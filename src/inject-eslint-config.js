@@ -8,7 +8,7 @@ module.exports = function injectEslintConfig (config) {
     return config;
   }
 
-  eslintRule.options.baseConfig = require(__dirname, '../eslint.config');
+  eslintRule.options.baseConfig = require('../eslint.config');
 
   return config;
 };
