@@ -131,6 +131,7 @@ async function publish () {
       tagName: 'v%s'
     },
 
+    requireCleanWorkingDir: false,
     'non-interactive': true,
     'dry-run': false
   });
