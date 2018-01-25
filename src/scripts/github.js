@@ -38,7 +38,7 @@ async function release ({ changelog, tagName, version, zipPath }) {
 
   spinner.succeed();
   spinner.start('Uploading the zip file');
-  const [ assetInfo ] = await githubClient.uploadAssets({ releaseId: releaseInfo.id, repo, github });
+  const [ assetInfo ] = await githubClient.uploadAssets({ release: releaseInfo, repo, github });
 
   spinner.succeed();
 
