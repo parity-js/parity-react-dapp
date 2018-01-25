@@ -117,7 +117,8 @@ async function publish () {
 
   spinner.start('Pushing the release to Git');
 
-  const { changelog, tagName } = await ReleaseIt({
+  const tagName = 'v%s';
+  const { changelog } = await ReleaseIt({
     npm: {
       publish: false
     },
@@ -128,7 +129,7 @@ async function publish () {
     src: {
       commitMessage: 'Release v%s',
       tagAnnotation: 'Release v%s',
-      tagName: 'v%s'
+      tagName
     },
 
     requireCleanWorkingDir: false,

@@ -59,12 +59,14 @@ function trim (text) {
 function fail (text) {
   if (spinner) {
     spinner.fail(trim(text));
+    spinner = null;
   }
 }
 
 function succeed (text) {
   if (spinner) {
     spinner.succeed(trim(text));
+    spinner = null;
   }
 }
 
