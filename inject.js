@@ -5,6 +5,7 @@ const injectEslintConfig = require('./src/inject-eslint-config');
 const injectHotLoader = require('./src/inject-hot-loader');
 const injectIndex = require('./src/inject-index');
 const injectHTMLPlugin = require('./src/inject-html-plugin');
+const injectParity = require('./src/inject-parity');
 const injectPlugins = require('./src/inject-plugins');
 
 const removeRequiredFiles = require('./src/remove-required-files');
@@ -30,6 +31,9 @@ module.exports = function inject (config) {
 
   // Inject misc. Webpack plugins
   config = injectPlugins(config);
+
+  // Inject Parity injection script
+  config = injectParity(config);
 
   // Inject Eslint custom config
   config = injectEslintConfig(config);
