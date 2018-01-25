@@ -1,6 +1,6 @@
 {
   "name": "parity-react-dapp",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A standard way of writing a React dapp, using ReactApp Rewired",
   "bin": {
     "parity-react-dapp": "./bin/index.js"
