@@ -1,5 +1,7 @@
 # Parity React Dapp
 
+[![Dependency Status](https://david-dm.org/Parity-JS/parity-react-dapp.svg)](https://david-dm.org/Parity-JS/parity-react-dapp)
+
 Tweak Create React App via React App Rewire to best integrate with dapp development.
 
 ## Installation
