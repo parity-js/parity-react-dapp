@@ -15,7 +15,6 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 import PostMessageProvider from '@parity/api/lib/provider/postMessage';
-import HttpProvider from '@parity/api/lib/provider/http';
 import qs from 'query-string';
 
 function initProvider () {
@@ -46,13 +45,12 @@ function initProvider () {
     appId = path[2];
   }
 
-  const isIframe = window.top !== window;
+  // Check if in an IFrame
+  if (window.top !== window) {
+    return console.error('This Dapp is not running in an IFrame. PostMessage provider will not work.');
+  }
 
-  // Use the Post Message provider if in an IFrame,
-  // Otherwise try the HTTP provider with default port
-  const ethereum = isIframe
-    ? new PostMessageProvider(appId)
-    : new HttpProvider('http://127.0.0.1:8545/');
+  const ethereum = new PostMessageProvider(appId);
 
   console.log(`Requesting API communications token for ${appId}`);
 
