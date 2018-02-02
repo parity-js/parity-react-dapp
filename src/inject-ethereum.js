@@ -46,7 +46,7 @@ function initProvider () {
   }
 
   // Check if in an IFrame
-  if (window.top !== window) {
+  if (window.top === window) {
     return console.error('This Dapp is not running in an IFrame. PostMessage provider will not work.');
   }
 
