@@ -18,12 +18,14 @@
   "dependencies": {
     "@parity/api": "2.1.18",
     "@parity/shared": "2.2.22",
+    "application-config": "1.0.1",
     "archiver": "2.1.1",
     "chalk": "2.3.0",
     "fs-extra": "5.0.0",
     "inquirer": "5.0.1",
+    "lodash.merge": "4.6.0",
     "node-fetch": "1.7.3",
-    "parity-react-app": "^0.6.1",
+    "parity-react-app": "0.6.3",
     "parse-repo": "1.0.4",
     "release-it": "6.1.1",
     "semver": "5.5.0"

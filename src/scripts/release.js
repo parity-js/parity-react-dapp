@@ -34,11 +34,22 @@ const BUILD_DIRECTORY = path.join(DAPP_DIRECTORY, 'build');
 const MANIFEST_FILE = path.join(DAPP_DIRECTORY, 'manifest.json');
 const PACKAGE_FILE = path.join(DAPP_DIRECTORY, 'package.json');
 
-delete require.cache[require.resolve(MANIFEST_FILE)];
-delete require.cache[require.resolve(PACKAGE_FILE)];
+if (fs.existsSync(MANIFEST_FILE)) {
+  delete require.cache[require.resolve(MANIFEST_FILE)];
+}
 
-const manifest = require(MANIFEST_FILE);
-const appPackage = require(PACKAGE_FILE);
+if (fs.existsSync(PACKAGE_FILE)) {
+  delete require.cache[require.resolve(PACKAGE_FILE)];
+}
+
+const manifest = fs.existsSync(MANIFEST_FILE)
+  ? require(MANIFEST_FILE)
+  : null;
+
+const appPackage = fs.existsSync(PACKAGE_FILE)
+  ? require(PACKAGE_FILE)
+  : null;
+
 const appVersion = appPackage.version;
 
 function isHex (value) {

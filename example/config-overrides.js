@@ -1,7 +1,7 @@
-const injectParityReactDapp = require('parity-react-dapp/inject');
+const rewireParity = require('react-app-rewire-parity');
 
 module.exports = (config) => {
-  config = injectParityReactDapp(config);
+  config = rewireParity(config);
 
   return config;
 };

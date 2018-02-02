@@ -273,6 +273,17 @@ append-transform@^0.4.0:
   dependencies:
     default-require-extensions "^1.0.0"
 
+application-config-path@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/application-config-path/-/application-config-path-0.1.0.tgz#193c5f0a86541a4c66fba1e2dc38583362ea5e8f"
+
+application-config@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/application-config/-/application-config-1.0.1.tgz#5aa2e2a5ed6abd2e5d1d473d3596f574044fe9e7"
+  dependencies:
+    application-config-path "^0.1.0"
+    mkdirp "^0.5.1"
+
 aproba@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
@@ -5032,6 +5043,10 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
+lodash.merge@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.0.tgz#69884ba144ac33fe699737a6086deffadd0f89c5"
+
 lodash.partition@4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.partition/-/lodash.partition-4.6.0.tgz#a38e46b73469e0420b0da1212e66d414be364ba4"
@@ -5756,16 +5771,16 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
-parity-react-app@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/parity-react-app/-/parity-react-app-0.6.1.tgz#f641783743a2b620bb1f7fd41bebb1179bdae33d"
+parity-react-app@0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/parity-react-app/-/parity-react-app-0.6.3.tgz#6dee12515a1a056518c7968a380d2a6403ae4800"
   dependencies:
     chalk "2.3.0"
     fs-extra "5.0.0"
     inquirer "5.0.1"
     lodash.partition "4.6.0"
     ora "1.3.0"
-    react-app-rewire-parity "^0.5.1"
+    react-app-rewire-parity "^0.5.2"
     react-app-rewired "1.4.0"
     react-scripts "1.1.0"
 
@@ -6528,9 +6543,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-app-rewire-parity@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-app-rewire-parity/-/react-app-rewire-parity-0.5.1.tgz#f5093bacf55d5ac2b579973582f4a88043dfe43f"
+react-app-rewire-parity@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/react-app-rewire-parity/-/react-app-rewire-parity-0.5.2.tgz#e0c72294cf30a3e1a0edd0b5eb2705112fecb647"
   dependencies:
     babel-preset-parity "^0.2.0"
     circular-dependency-plugin "4.4.0"
