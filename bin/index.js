@@ -20,22 +20,7 @@
 const chalk = require('chalk');
 
 const spinner = require('../src/scripts/spinner');
-const release = require('../src/scripts/release');
-
-async function main () {
-  const command = process.argv[2];
-
-  if (command === 'release') {
-    await release();
-    return true;
-  }
-
-  // Specify that this is a dapp
-  process.env.DAPP = true;
-
-  // Run the main Parity React App Scripts
-  await require('parity-react-app/src/scripts/main')();
-}
+const main = require('../src/scripts/main');
 
 main()
   .then(() => {
