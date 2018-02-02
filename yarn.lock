@@ -5598,16 +5598,16 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
-parity-react-app@0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/parity-react-app/-/parity-react-app-0.6.4.tgz#74457ae1654a08c2e713f1ef080b08cd2f7d5578"
+parity-react-app@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/parity-react-app/-/parity-react-app-0.7.0.tgz#67277e3525a4873b2f235641a6dd7cec478859df"
   dependencies:
     chalk "2.3.0"
     fs-extra "5.0.0"
     inquirer "5.0.1"
     lodash.partition "4.6.0"
     ora "1.3.0"
-    react-app-rewire-parity "^0.5.3"
+    react-app-rewire-parity "^0.6.0"
     react-app-rewired "1.4.0"
     react-scripts "1.1.0"
 
@@ -6366,9 +6366,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-app-rewire-parity@^0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/react-app-rewire-parity/-/react-app-rewire-parity-0.5.3.tgz#e26ad0d281decaa089895b5beaa77495b2c33af9"
+react-app-rewire-parity@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-app-rewire-parity/-/react-app-rewire-parity-0.6.0.tgz#c7fa45a2c906676e1409c61cd4dbe7a9abfe687f"
   dependencies:
     babel-preset-parity "^0.2.0"
     circular-dependency-plugin "4.4.0"
