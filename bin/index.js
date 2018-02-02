@@ -19,37 +19,21 @@
 
 const chalk = require('chalk');
 
-const spinner = require('../src/scripts/spinner');
-const init = require('../src/scripts/init');
-const { lint, lintJS, lintCSS } = require('../src/scripts/lint');
+const spinner = require('../src/spinner');
 const release = require('../src/scripts/release');
 
 async function main () {
   const command = process.argv[2];
 
-  // If linting, spawn a new process and pass all the arguments
-  if (command === 'lint') {
-    return lint();
-  }
-
-  if (command === 'lint-js') {
-    return lintJS();
-  }
-
-  if (command === 'lint-css') {
-    return lintCSS();
-  }
-
-  if (command === 'init') {
-    return init();
-  }
-
   if (command === 'release') {
     return release();
   }
 
-  // Run the main React Scripts
-  require('react-app-rewired/bin/index');
+  // Specify that this is a dapp
+  process.env.DAPP = true;
+
+  // Run the main Parity React App Scripts
+  require('parity-react-app/bin/index');
 }
 
 main()
