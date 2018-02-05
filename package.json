@@ -23,9 +23,9 @@
     "inquirer": "5.0.1",
     "lodash.merge": "4.6.0",
     "node-fetch": "1.7.3",
-    "parity-react-app": "0.7.0",
+    "parity-react-app": "0.8.0",
     "parse-repo": "1.0.4",
-    "query-string": "^5.0.1",
+    "query-string": "5.0.1",
     "release-it": "6.1.1",
     "semver": "5.5.0"
   },

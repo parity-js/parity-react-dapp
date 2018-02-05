@@ -7,7 +7,7 @@ Tweak Create React App via React App Rewire to best integrate with dapp developm
 ### 1) Install this dependency
 
 ```bash
-$> npm install parity-react-dapp --save-dev
+$> yarn add -D parity-react-dapp
 ```
 
 ### 2) Add the init script
@@ -23,7 +23,7 @@ Add to your `package.json` file this script:
 ### 3) Run the init script
 
 ```bash
-$> npm run init
+$> yarn run init
 ```
 
 This will add the base files (eslint config, gitignore file, etc.) to your project,
@@ -55,8 +55,8 @@ You get React Hot Reloading for free, without any configuration needed!
 You can use these scripts just as you would with Create React App:
 
 ```bash
-$> npm start  # Start the dev environment
-$> npm build  # Build your project
+$> yarn start  # Start the dev environment
+$> yarn build  # Build your project
 ```
 
 There are a few more scripts included in here
@@ -66,7 +66,7 @@ There are a few more scripts included in here
 You have included JS and CSS linting:
 
 ```bash
-$> npm run lint:js   # Lint your Javascript files with eslint
-$> npm run lint:css  # Lint your CSS files with stylelint
-$> npm run lint      # Run both linters
+$> yarn lint:js   # Lint your Javascript files with eslint
+$> yarn lint:css  # Lint your CSS files with stylelint
+$> yarn lint      # Run both linters
 ```
