@@ -88,24 +88,24 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@parity/abi@2.1.x":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-2.1.3.tgz#b9107cf742751bf7fa9518cab511f3e898e17524"
-  integrity sha512-FETrNnu9+uQiICpCpFIDidesWYS4ditXvGn/zjVZunlPXCdX4HbBzHECSNbaULzZOBO+AV+CC/Qf/zITaf78Lw==
+"@parity/abi@~2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-2.1.4.tgz#23e2b9e6d37a54035b76d941d6d74b9c5d21fb99"
+  integrity sha512-4yPqCYXlLhb9jmmAg+0SkA/2Rmf1ZvPzmGF3WBKvgrAjWPAvj5hZYW5rquRqrP3L22KfG+7A9RAw3aZYp45AMQ==
   dependencies:
-    bignumber.js "3.0.1"
+    bignumber.js "4.1.0"
     js-sha3 "0.5.5"
     utf8 "^2.1.2"
 
-"@parity/api@2.1.18":
-  version "2.1.18"
-  resolved "https://registry.yarnpkg.com/@parity/api/-/api-2.1.18.tgz#f09937b9e0ad7e8b75c84a83ba838bd21bd5d9e4"
-  integrity sha512-/jy12Gu8gnDCRNIdzY/6weOMRTijInnHv2NrwAGnDVgZobedeHyYMrjsxB+Nf1PVHAR7KgE2PVhkikYntNHStA==
+"@parity/api@2.1.24":
+  version "2.1.24"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-2.1.24.tgz#e04ca177598354b435b83c8cfe7c7c3672bf3e44"
+  integrity sha512-jJ93cyC5eZC9pQY/FXcSyQiFHNzg5wFzrVLB+RVfbKbIqCWmOAhlv+rssN35qPZ4ccehIGgFB5i7rkpfSajzkQ==
   dependencies:
-    "@parity/abi" "2.1.x"
+    "@parity/abi" "~2.1.4"
     "@parity/jsonrpc" "2.1.x"
     "@parity/wordlist" "1.1.x"
-    bignumber.js "3.0.1"
+    bignumber.js "4.1.0"
     blockies "0.0.2"
     es6-error "4.0.2"
     es6-promise "^4.1.1"
@@ -1552,6 +1552,11 @@ bignumber.js@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-3.0.1.tgz#807652d10e39de37e9e3497247edc798bb746f76"
   integrity sha1-gHZS0Q453jfp40lyR+3HmLt0b3Y=
+
+bignumber.js@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-4.1.0.tgz#db6f14067c140bd46624815a7916c92d9b6c24b1"
+  integrity sha512-eJzYkFYy9L4JzXsbymsFn3p54D+llV27oTQ+ziJG7WFRheJcNZilgVXMG0LoZtlQSKBsJdWtLFqOD0u+U0jZKA==
 
 binary-extensions@^1.0.0:
   version "1.11.0"
