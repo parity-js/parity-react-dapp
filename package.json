@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@parity/api": "2.1.24",
-    "@parity/shared": "2.2.22",
+    "@parity/shared": "3.0.2",
     "application-config": "1.0.1",
     "archiver": "2.1.1",
     "babel-core": "6.26.0",
