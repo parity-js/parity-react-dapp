@@ -46,7 +46,7 @@
     "fs-extra": "7.0.1",
     "inquirer": "5.0.1",
     "lodash.clonedeep": "4.5.0",
-    "lodash.merge": "4.6.0",
+    "lodash.merge": "4.6.1",
     "lodash.partition": "4.6.0",
     "node-fetch": "1.7.3",
     "ora": "3.0.0",
