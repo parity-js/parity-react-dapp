@@ -121,33 +121,32 @@
   resolved "https://registry.yarnpkg.com/@parity/jsonrpc/-/jsonrpc-2.1.5.tgz#9d2bedff6e90859dcc56f83c8a31042c4dd44849"
   integrity sha512-M6aLgssTfqloNgVFuzxSQ3J5RJ5T9g4a4wka1QVumaud7e4ubFjuJgR0F+0aQ/H1zdiTSMDHSmoaeAp8UoE4fA==
 
-"@parity/ledger@2.1.x":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@parity/ledger/-/ledger-2.1.2.tgz#d7f27b5c6084cda8dc38e1333454a67c752496a0"
-  integrity sha512-NmpL41jKAJdypfPO8IlSeqKmmQt6IOFF9Ke0J6m85P3uTxDD0pGXEWAIrDo289UGSV3aoUrEUk4Xys2K4lrFhA==
+"@parity/ledger@~2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@parity/ledger/-/ledger-2.1.3.tgz#e5eb67eac6ed8a7181b45cf49d3cc4a140b1a667"
+  integrity sha512-vc7ciadiubu1+dJ+jg1aS96JQmZOWzUE0jCvH85Alz6++vjNGs1664omOSSc3sy6rwhxE4s5qwLCUJm42nE9kw==
   dependencies:
-    bignumber.js "3.0.1"
+    bignumber.js "4.1.0"
     ethereumjs-tx "^1.2.5"
     u2f-api "0.0.9"
     u2f-api-polyfill "0.4.3"
 
-"@parity/shared@2.2.22":
-  version "2.2.22"
-  resolved "https://registry.yarnpkg.com/@parity/shared/-/shared-2.2.22.tgz#6200fc552578db854f979ef1edf6d5b038681156"
-  integrity sha512-MJPaFGBZAdTvsMS/6osdzrl7RDQfFuO7xzRjsbsU0u6lrZrgwWnEEKBHVUYwXhsfNbXORQF5mHyHviSKzHtRJw==
+"@parity/shared@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@parity/shared/-/shared-3.0.2.tgz#458a68c921a361a5b148aaed4e9a5e610ebc7082"
+  integrity sha512-OYsoHQs9ct1zHVVM5xyW8zryY3gOjS8sHsp4lPQ/gXqEXkJ9MyZF4HUu+TRDSirFQtChir2MWeEtnsi+DhSs+w==
   dependencies:
-    "@parity/ledger" "2.1.x"
+    "@parity/ledger" "~2.1.3"
+    bignumber.js "4.1.0"
     eventemitter3 "^2.0.3"
     loglevel "1.4.1"
-    mobx "2.6.4"
-    mobx-react "4.0.3"
     push.js "0.0.11"
     react-redux "4.4.6"
     redux "3.6.0"
     redux-actions "1.1.0"
     redux-thunk "2.1.0"
     scryptsy "2.0.0"
-    solc ngotchac/solc-js
+    solc "github:ngotchac/solc-js"
     useragent.js "^0.5.6"
     yargs "6.6.0"
 
@@ -1547,11 +1546,6 @@ big.js@^3.1.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
   integrity sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==
-
-bignumber.js@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-3.0.1.tgz#807652d10e39de37e9e3497247edc798bb746f76"
-  integrity sha1-gHZS0Q453jfp40lyR+3HmLt0b3Y=
 
 bignumber.js@4.1.0:
   version "4.1.0"
@@ -4985,7 +4979,7 @@ hoek@4.x.x:
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.0.tgz#72d9d0754f7fe25ca2d01ad8f8f9a9449a89526d"
   integrity sha512-v0XCLxICi9nPfYrS9RL8HbYnXi9obYAeLbSP00BmnZwCK9+Ih9WOjoZ8YoHCoav2csqn4FOz4Orldsy2dmDwmQ==
 
-hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
+hoist-non-react-statics@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
   integrity sha1-qkSM8JhtVcxAdzsXF0t90GbLfPs=
@@ -7002,18 +6996,6 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
-
-mobx-react@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.0.3.tgz#40eb31d25e0b8d63048eda2376cc56bfabd14f75"
-  integrity sha1-QOsx0l4LjWMEjtojdsxWv6vRT3U=
-  dependencies:
-    hoist-non-react-statics "^1.2.0"
-
-mobx@2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.6.4.tgz#e05a91a5b2c97dac3fdab34024e6b74a7f4311ab"
-  integrity sha1-4FqRpbLJfaw/2rNAJOa3Sn9DEas=
 
 modify-values@^1.0.0:
   version "1.0.0"
@@ -9553,8 +9535,9 @@ sockjs@0.3.19:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
 
-solc@ngotchac/solc-js:
+"solc@github:ngotchac/solc-js":
   version "0.4.4"
+  uid "04eb38cc3003fba8cb3656653a7941ed36408818"
   resolved "https://codeload.github.com/ngotchac/solc-js/tar.gz/04eb38cc3003fba8cb3656653a7941ed36408818"
   dependencies:
     memorystream "^0.3.1"
