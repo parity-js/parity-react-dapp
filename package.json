@@ -59,7 +59,7 @@
     "react-scripts": "1.1.5",
     "release-it": "8.0.1",
     "semver": "5.6.0",
-    "stylelint": "8.4.0",
+    "stylelint": "9.8.0",
     "stylelint-config-standard": "18.2.0"
   },
   "peerDependencies": {
