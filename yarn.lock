@@ -207,28 +207,28 @@
     universal-user-agent "^2.0.1"
     url-template "^2.0.8"
 
-"@octokit/request@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-2.1.1.tgz#2c6c6356f2bced33fb6352df8d44f9f50e076e76"
-  integrity sha512-N0I01iWwbogadLyCbVJ048hDMet3uGrB93VeJgB+jeuugRUr1DXncEu2tpiWgSk1azGDFPe5RTRvfx4Uadf+Fw==
+"@octokit/request@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@octokit/request/-/request-2.1.2.tgz#a506e06cb3fd73617bd82710047cf3ee7e657835"
+  integrity sha512-RtC+7Np9hWWYfnXyT1qwBR6Y9uMArq2yY475o4sFp4qis5hAgOUEZMWknR+dfDpRRXoFOPSAAIjc900Gs7qI6Q==
   dependencies:
     "@octokit/endpoint" "^3.0.0"
     is-plain-object "^2.0.4"
+    node-fetch "^2.3.0"
     universal-user-agent "^2.0.1"
 
-"@octokit/rest@16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.0.1.tgz#053c1a80aca11c096ad6e09626ba5a18576c1aa0"
-  integrity sha512-4Vbn3TtKADUOSk9usbfJ6XsEErt9h6Thms6EejI/MWMeVqdY5a3NevbAp7rVSXBl2xYIw3erPLkeFpGg+RmkoQ==
+"@octokit/rest@16.0.5":
+  version "16.0.5"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.0.5.tgz#95d10ba057904fc0cd0aa37c85da9e221dd26029"
+  integrity sha512-4v9gvBU80EmU05xq150G6AmL3Qsmyfkmg805o21nMi5F5Uo9e2Onhna6EyLTMwidoZ3PFX5l5/LQ3VmLcMkkJQ==
   dependencies:
-    "@octokit/request" "2.1.1"
+    "@octokit/request" "2.1.2"
     before-after-hook "^1.2.0"
     btoa-lite "^1.0.0"
     lodash.get "^4.4.2"
     lodash.pick "^4.4.0"
     lodash.set "^4.3.2"
     lodash.uniq "^4.5.0"
-    node-fetch "^2.1.1"
     octokit-pagination-methods "^1.1.0"
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
@@ -7372,7 +7372,7 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-fetch@2.3.0, node-fetch@^2.1.1:
+node-fetch@2.3.0, node-fetch@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
   integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
@@ -9187,12 +9187,12 @@ relateurl@0.2.x:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
-release-it@8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-8.1.0.tgz#a7eb4b2d80880153a4432a5e1ca9678ea94a6fd9"
-  integrity sha512-pZAZtEKMBHR0CQ0klDaGWKQWWou0bsIFlndxo6CgvTgXq/xFI7prNiyWqY0ksMBVaZX+SXQv3oeVEUZ3eKr73Q==
+release-it@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-8.2.0.tgz#430d6b6090b323261c2712fe554ee473a1401241"
+  integrity sha512-gWR2oJE9OIarQFvmN32Ick/cLVTZcDvwf249j6GU/4eAj6xK6XRufLk0erDLgS0H4lHHELyvD7EUNXlUDpj6Qw==
   dependencies:
-    "@octokit/rest" "16.0.1"
+    "@octokit/rest" "16.0.5"
     async-retry "1.2.3"
     babel-preset-env "1.7.0"
     babel-register "6.26.0"
