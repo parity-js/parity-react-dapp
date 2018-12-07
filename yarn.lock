@@ -233,21 +233,21 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@parity/abi@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-3.0.5.tgz#8efab868aa197aa3ad89123c54016106d1a2e7c3"
-  integrity sha512-YhXwjdgUTo4N05UFfbYLoqZYCPzDpt2KPDb0HKPhtwtBnHtSmvSOuH9Mxg5fHx9qvlq3u0f07JQ0c8ieH26Bhw==
+"@parity/abi@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-3.0.6.tgz#aa7faa861644f5f1a071b34acdd345910d52bdba"
+  integrity sha512-pTBUFEQU7yUUZtSKK8LoWRjRdJUXoDYVgWWtDOWqTFKbTl0JGK31OLus+hYrb2Rc/+SDrEyQtyVUDnP7cQajTQ==
   dependencies:
     bignumber.js "^8.0.1"
     js-sha3 "0.7.0"
     utf8 "^3.0.0"
 
-"@parity/api@3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@parity/api/-/api-3.0.5.tgz#bfc44b149dbbe038226e2ebe2d6f714efe3896a0"
-  integrity sha512-QY6L+QybSWV7XhtgSELa9ltVQKQWbkym1JFlnGdH21V/8bDZT0T04vr/ozEr+zbXktMVDY7IExXv2JRmmjz09w==
+"@parity/api@3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-3.0.6.tgz#6c1b30f68ee429047226f3979b861910632200c4"
+  integrity sha512-2KLiFNNz+K/334O8UF5jKHYcsAo2pP74HKOXzkWg7ueCBKLG16JS1/d7OlHW7oJAtjQ8dkjm3GZPZW/W0MmYHA==
   dependencies:
-    "@parity/abi" "^3.0.5"
+    "@parity/abi" "^3.0.6"
     bignumber.js "^8.0.1"
     blockies "0.0.2"
     es6-error "4.0.2"
