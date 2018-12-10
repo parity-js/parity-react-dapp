@@ -32,7 +32,7 @@
     "chalk": "2.4.1",
     "circular-dependency-plugin": "4.4.0",
     "ejs-loader": "0.3.1",
-    "eslint": "4.16.0",
+    "eslint": "5.10.0",
     "eslint-config-semistandard": "12.0.0",
     "eslint-config-standard": "10.2.1",
     "eslint-config-standard-react": "5.0.0",
