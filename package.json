@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Parity-JS/parity-react-dapp.git"
   },
   "dependencies": {
-    "@parity/api": "3.0.13",
+    "@parity/api": "3.0.23",
     "@parity/shared": "3.0.2",
     "application-config": "1.0.1",
     "archiver": "3.0.0",
