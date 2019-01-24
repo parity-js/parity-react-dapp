@@ -39,4 +39,4 @@ export default @observer class CustomMenu extends Component {
   handleItemClick = (_, { name }) => {
     this.store.setActive(name);
   };
-}
+};
