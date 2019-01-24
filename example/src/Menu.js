@@ -4,8 +4,7 @@ import { Input, Menu } from 'semantic-ui-react';
 
 import MenuStore from './Menu.store';
 
-@observer
-export default class CustomMenu extends Component {
+export default @observer class CustomMenu extends Component {
   store = new MenuStore();
 
   render () {
